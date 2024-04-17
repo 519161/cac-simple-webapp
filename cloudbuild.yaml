@@ -12,9 +12,6 @@ steps:
       - 'apply'
       - '-f'
       - 'blue/deploy.yaml'
-    env:
-      - 'CLOUDSDK_COMPUTE_ZONE=us-central1'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=simple-web-p'
 
   # Deploy to green namespace
   - name: 'gcr.io/cloud-builders/kubectl'
@@ -22,9 +19,6 @@ steps:
       - 'apply'
       - '-f'
       - 'green/deploy.yaml'
-    env:
-      - 'CLOUDSDK_COMPUTE_ZONE=us-central1'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=simple-web-p'
       
 images:
   - 'gcr.io/$PROJECT_ID/cac-simple-webapp:$COMMIT_SHA'
