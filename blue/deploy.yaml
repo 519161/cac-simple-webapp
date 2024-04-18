@@ -102,7 +102,7 @@ spec:
         app: cac-simple-webapp
     spec:
       containers:
-        - image: gcr.io/public-cloud-concepts-416409/github.com/519161/cac-simple-webapp:${SHORT_SHA}
+        - image: gcr.io/public-cloud-concepts-416409/github.com/519161/cac-simple-webapp
           imagePullPolicy: IfNotPresent
           name: cac-simple-webapp-sha256-1
           securityContext:
