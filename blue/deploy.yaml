@@ -105,15 +105,6 @@ spec:
         - image: gcr.io/public-cloud-concepts-416409/cac-simple-webapp
           imagePullPolicy: IfNotPresent
           name: cac-simple-webapp-sha256-1
-          resources:
-            limits:
-              cpu: 500m
-              ephemeral-storage: 1Gi
-              memory: 2Gi
-            requests:
-              cpu: 500m
-              ephemeral-storage: 1Gi
-              memory: 2Gi
           securityContext:
             capabilities:
               drop:
