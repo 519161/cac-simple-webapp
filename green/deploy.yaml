@@ -253,9 +253,9 @@ metadata:
   namespace: green
 spec:
   allocateLoadBalancerNodePorts: true
-  clusterIP: 34.118.228.135
+  clusterIP: 104.198.191.134
   clusterIPs:
-    - 34.118.228.135
+    - 104.198.191.134
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
