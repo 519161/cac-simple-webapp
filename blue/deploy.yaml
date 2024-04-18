@@ -102,7 +102,7 @@ spec:
         app: cac-simple-webapp
     spec:
       containers:
-        - image: gcr.io/driven-lore-415513/github.com/519161/cac-simple-webapp
+        - image: gcr.io/public-cloud-concepts-416409/cac-simple-webapp
           imagePullPolicy: IfNotPresent
           name: cac-simple-webapp-sha256-1
           resources:
